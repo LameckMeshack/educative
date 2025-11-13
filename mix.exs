@@ -5,7 +5,7 @@ defmodule MusicDB.MixProject do
     [
       app: :music_db,
       version: "0.1.0",
-      elixir: "~> 1.4",
+      elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       aliases: aliases()
@@ -23,10 +23,10 @@ defmodule MusicDB.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ecto_sql, "~> 3.0"},
-      {:postgrex, ">= 0.0.0"},
-      {:mariaex, ">= 0.0.0"},
-      {:jason, "~> 1.1"}
+      {:ecto_sql, "~> 3.13.0"},
+      {:postgrex, ">= 0.21.0"},
+      # {:mariaex, ">= 0.0.0"},
+      {:jason, "~> 1.2"}
     ]
   end
 
@@ -37,3 +37,4 @@ defmodule MusicDB.MixProject do
     ]
   end
 end
+
