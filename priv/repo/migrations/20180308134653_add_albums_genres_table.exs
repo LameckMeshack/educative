@@ -11,3 +11,5 @@ defmodule MusicDB.Repo.Migrations.AddAlbumsGenresTable do
     create index(:albums_genres, :genre_id)
   end
 end
+
+
